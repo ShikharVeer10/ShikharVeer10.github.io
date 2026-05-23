@@ -1,5 +1,5 @@
 import React from 'react';
-import { Terminal, Shield, FileSpreadsheet, Play, Activity } from 'lucide-react';
+import { Terminal, Shield, FileSpreadsheet, Play, Activity, Cpu } from 'lucide-react';
 
 const previews = {
   emotio: {
@@ -57,6 +57,24 @@ const previews = {
         <div className="terminal-line text-green">  4. Hiring Plan docx  [COMPLETE]</div>
         <div className="terminal-line text-green">  5. Financials xlsx   [COMPLETE]</div>
         <div className="terminal-line text-accent">■ COMPLETED: 9/9 business briefs</div>
+      </div>
+    )
+  },
+  synapsearena: {
+    icon: <Cpu size={14} />,
+    title: "SynapseArena Orchestrator",
+    body: (
+      <div className="preview-terminal">
+        <div className="terminal-line text-green"><Play size={10} /> Debate topic: "Scaling vs Limits"</div>
+        <div className="terminal-line">• Moderator: Round 1 Argument Phase</div>
+        <div className="terminal-line text-green">  - Proposer: "Compute scaling persists..."</div>
+        <div className="terminal-line text-yellow">  - Opposer: "Physical bottlenecks exist..."</div>
+        <div className="terminal-line">• Moderator: Round 2 Rebuttal Phase</div>
+        <div className="terminal-line">• Validating inter-agent contracts:</div>
+        <div className="terminal-line text-green">  - Message payload schemas: OK</div>
+        <div className="terminal-line text-green">  - Turn-taking lifecycle: OK</div>
+        <div className="terminal-line">• Judge compiling final verdict...</div>
+        <div className="terminal-line text-accent">■ VERDICT: 52% CONFIDENCE [PROPOSER]</div>
       </div>
     )
   }
