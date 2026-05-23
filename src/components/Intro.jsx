@@ -93,7 +93,7 @@ export default function Intro({ theme, onToggleTheme }) {
       {/* Right Column: Manifesto Header & Text */}
       <div className="section-right">
         <h2 className="manifesto-heading">
-          I build systems where <span className="highlight">users, data, and AI</span> come together.
+          I build systems where <span className="highlight">strict schema validation, robust backend APIs, and stateful AI agents</span> come together.
         </h2>
         
         <div className="manifesto-body">

@@ -8,7 +8,7 @@ export default function IntroBlock() {
       <h1 className="intro-title">
         <span>I build systems where</span>
         <span>
-          <span className="indigo-glow"> users, data, and AI</span>
+          <span className="indigo-glow"> strict schema validation, robust backend APIs, and stateful AI agents</span>
         </span>
         <span> come together.</span>
       </h1>

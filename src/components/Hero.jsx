@@ -7,7 +7,7 @@ export default function Hero() {
       <h1 className="hero-heading">
         <span>I build systems where</span>
         <span>
-          <span className="highlight">users, data, and AI</span>
+          <span className="highlight">strict schema validation, robust backend APIs, and stateful AI agents</span>
         </span>
         <span>come together.</span>
       </h1>
