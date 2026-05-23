@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "fetch-ref": "node -e \"fetch('https://abhiram-adab.tech/assets/index-DIVlemX3.css').then(r=>r.text()).then(t=>require('fs').writeFileSync('scratch_abhiram.css', t)).catch(console.error)\"",
+    "find-readme": "node -e \"const text = require('fs').readFileSync('C:\\\\Users\\\\shikh\\\\.gemini\\\\antigravity-cli\\\\brain\\\\b8fad141-2192-4e6d-a365-64e4e79a9e02\\\\.system_generated\\\\steps\\\\570\\\\content.md', 'utf8'); let idx = text.indexOf('markdown-body'); if (idx !== -1) require('fs').writeFileSync('scratch_synapse.html', text.substring(idx, idx + 10000)); else console.log('not found');\""
+  },
+  "dependencies": {
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.5"
+  }
+}
