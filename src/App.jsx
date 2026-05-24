@@ -7,6 +7,7 @@ import Work from './components/Work';
 import Publications from './components/Publications';
 import Journey from './components/Journey';
 import GitHubActivity from './components/GitHubActivity';
+import Achievements from './components/Achievements';
 import Toolkit from './components/Toolkit';
 import Footer from './components/Footer';
 
@@ -80,6 +81,9 @@ export default function App() {
 
         {/* 4. GitHub Contribution Activity */}
         <GitHubActivity username="ShikharVeer10" />
+
+        {/* 5. Achievements */}
+        <Achievements />
 
         {/* 5. Toolkit with connected highlighting */}
         <Toolkit 

@@ -171,3 +171,17 @@ export const statsInfo = [
   { label: "Eff. Gain", val: "70% reduction" },
   { label: "Stack", val: "AI & Backend" }
 ];
+
+export const achievements = [
+  {
+    id: "postathon",
+    title: "3rd Place — VIT-AP Post-a-thon Hackathon",
+    date: "2025",
+    organization: "VIT-AP University",
+    details: [
+      "Awarded 3rd place for engineering IntelliPost, an asynchronous document intelligence platform designed to extract structured schemas from policy documents.",
+      "Selected to showcase the system's strict Pydantic validation workflow and multi-agent reasoning architecture directly to Union Minister Shri Chandra Sekhar Pemmasani."
+    ]
+  }
+];
+
