@@ -113,7 +113,7 @@ export const journey = {
         "Specialization in Artificial Intelligence and Machine Learning.",
         "Coursework in deep learning, computer vision, natural language processing, and databases."
       ],
-      tagline: "The kind of college years that don't just teach you how models learn — but quietly wire the discipline to build the systems that run them."
+      tagline: "Developing the systems intuition that transforms theoretical logic into concrete, production-grade software."
     },
     {
       company: "Oakridge International School",
