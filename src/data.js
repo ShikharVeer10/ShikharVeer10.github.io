@@ -112,7 +112,8 @@ export const journey = {
       bullets: [
         "Specialization in Artificial Intelligence and Machine Learning.",
         "Coursework in deep learning, computer vision, natural language processing, and databases."
-      ]
+      ],
+      tagline: "Where abstract machine learning theories are translated into high-performance, production-ready architectures."
     },
     {
       company: "Oakridge International School",
