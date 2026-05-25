@@ -84,6 +84,12 @@ export const projects = [
 export const journey = {
   experience: [
     {
+      company: "Deloitte",
+      role: "AI Intern",
+      date: "May 2026 – Present",
+      bullets: []
+    },
+    {
       company: "Grant Thornton Bharat LLP",
       role: "Summer Trainee",
       date: "June 2025 – July 2025",
