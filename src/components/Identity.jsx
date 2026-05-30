@@ -55,7 +55,7 @@ export default function Identity() {
           <Github size={14} />
         </a>
         <a 
-          href="file:///C:/Users/shikh/OneDrive/Documents/Desktop/Resume.pdf" 
+          href="/resume.pdf" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="identity-link-item"

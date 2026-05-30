@@ -75,7 +75,7 @@ export default function SidePanel({ theme, onToggleTheme }) {
           <span>Resume PDF</span>
         </div>
         <a 
-          href="file:///C:/Users/shikh/OneDrive/Documents/Desktop/Resume.pdf" 
+          href="/resume.pdf" 
           target="_blank" 
           rel="noopener noreferrer"
           className="cv-download-btn"

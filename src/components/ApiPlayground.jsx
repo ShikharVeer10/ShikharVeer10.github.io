@@ -169,7 +169,7 @@ export default function ApiPlayground({ selectedProjectId }) {
           <p>Download full technical resume</p>
         </div>
         <a 
-          href="file:///C:/Users/shikh/OneDrive/Documents/Desktop/Resume.pdf" 
+          href="/resume.pdf" 
           target="_blank" 
           rel="noopener noreferrer"
           className="download-cv-action-btn"
