@@ -86,10 +86,12 @@ export const journey = {
     {
       company: "Deloitte",
       role: "AI Intern",
-      date: "May 2026 – Present",
+      date: "May 2026 – July 2026",
       bullets: [
         "Built an AI-powered document intelligence pipeline for extracting complex engineering documents and presentation slides into structured JSON while preserving layout, typography, styling, and semantic structure.",
-        "Developed reconstruction and validation frameworks to regenerate documents from structured representations, analyze extraction fidelity, identify reconstruction failures, and improve end-to-end document understanding using OCR post-processing, layout reasoning, and multi-agent AI workflows."
+        "Developed reconstruction and validation frameworks to regenerate documents from structured representations, analyze extraction fidelity, identify reconstruction failures, and improve end-to-end document understanding using OCR post-processing, layout reasoning, and multi-agent AI workflows.",
+        "Designed a template-aware PowerPoint generation system using a multi-agent workflow to map unstructured text and JSON into native presentation layouts without compromising visual formatting.",
+        "Implemented custom rendering and text-run manipulation modules to dynamically generate presentations from multimodal inputs while preserving fonts, margins, shape constraints, and slide aesthetics."
       ]
     },
     {
