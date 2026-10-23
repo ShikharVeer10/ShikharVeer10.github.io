@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { projects, experience, bentoToolkit } from '../data';
 import { ArrowUpRight } from 'lucide-react';
 
@@ -6,7 +6,7 @@ export default function ShipStream({ onSelectProject, onSelectExperience }) {
   // Tab states for each project card: key is project.id, value is active tab name ('overview' | 'metrics' | 'stack')
   const [projectTabs, setProjectTabs] = useState({
     emotio: 'overview',
-    intellipost: 'overview',
+    unipath: 'overview',
     traction: 'overview'
   });
 

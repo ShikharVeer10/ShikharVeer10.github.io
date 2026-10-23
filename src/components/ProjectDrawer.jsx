@@ -31,32 +31,42 @@ const projectDeepDives = {
       "Optimized HuggingFace pipelines with ONNX runtime conversions and model quantization, decreasing local CPU inference latency by 45%."
     ]
   },
-  intellipost: {
+  unipath: {
     architecture: `
 ┌─────────────────────────────────────────────────────────────┐
-│               INTELLIPOST SYSTEM FLOW DIAGRAM                │
+│                 UNIPATH SYSTEM ARCHITECTURE                 │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  [User PDF] ──> [FastAPI Upload] ──> [Pydantic-AI Agent]    │
-│                                            │                │
-│                                            ▼                │
-│  [PostgreSQL] <── [SQLAlchemy Async] <── [Validated JSON]   │
+│  [Next.js Client] ──> [FastAPI Gateway] ──> [JWT Auth]     │
+│                              │                              │
+│                              ├─> [Resume Parser / PDF]      │
+│                              │         │ (PydanticAI)       │
+│                              │         ▼                    │
+│                              ├─> [Profile Matcher Engine]   │
+│                              │         │ (Dynamic Scoring)  │
+│                              │         ▼                    │
+│                              ├─> [RAG Advisor + pgvector]   │
+│                              │                              │
+│                              └─> [Async SQLAlchemy Engine]  │
+│                                        │                    │
+│                                        ▼                    │
+│                                [PostgreSQL Store]           │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 `,
     challenges: [
       {
-        title: "Unstructured Data Hallucinations",
-        desc: "Large PDFs containing detailed tables caused standard LLM prompts to output malformed JSON or miss parameters."
+        title: "Multi-Criteria Evaluation Calibration",
+        desc: "Calibrating dynamic admission probability heuristics across diverse university assessment types (research vs systems vs GPA-weighted) required domain-calibrated multi-factor scoring."
       },
       {
-        title: "Asynchronous Database Locks",
-        desc: "Concurrent multi-user uploads locked tables during write operations on structured policy parameters."
+        title: "Unstructured Resume Extraction Fidelity",
+        desc: "Extracting normalized GPAs, standardized test scores, research publications, and work experience from diverse PDF layouts caused parsing schema inconsistencies."
       }
     ],
     solutions: [
-      "Designed a strict Pydantic schema model with double-pass verification, ensuring zero null outputs.",
-      "Integrated SQLModel / SQLAlchemy asynchronous session loops, achieving parallel file uploads without database locks."
+      "Engineered institutional scoring models combining normalized academic baselines, institutional weightings, and historical candidate distributions.",
+      "Built structured extraction pipelines using PydanticAI agents with deterministic schema validation and heuristic fallback parsing."
     ]
   },
   traction: {

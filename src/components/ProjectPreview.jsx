@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Terminal, Shield, FileSpreadsheet, Play, Activity, Cpu } from 'lucide-react';
 
 const previews = {
@@ -26,20 +26,20 @@ const previews = {
       </div>
     )
   },
-  intellipost: {
+  unipath: {
     icon: <Shield size={14} />,
-    title: "IntelliPost Parser Logs",
+    title: "UniPath Evaluator Logs",
     body: (
       <div className="preview-terminal">
-        <div className="terminal-line text-green"><Play size={10} /> PDF received: policy_contract.pdf</div>
-        <div className="terminal-line">• File size: 4.8MB</div>
-        <div className="terminal-line">• Pages: 14</div>
-        <div className="terminal-line">• Extracting structure parameters...</div>
-        <div className="terminal-line">• Validating schemas:</div>
-        <div className="terminal-line text-green">  - Header metadata: OK</div>
-        <div className="terminal-line text-green">  - Liability table: OK</div>
-        <div className="terminal-line text-green">  - Coverage limits: OK</div>
-        <div className="terminal-line text-accent">■ SCHEMA EXPORT: 100% VALIDATED</div>
+        <div className="terminal-line text-green"><Play size={10} /> Profile evaluated: applicant_eval.json</div>
+        <div className="terminal-line">• CGPA: 8.8/10 | GRE: 324 | Papers: 2</div>
+        <div className="terminal-line">• Target: MS CS (United States)</div>
+        <div className="terminal-line">• Running Multi-Criteria Matcher...</div>
+        <div className="terminal-line">• Admissions Probability Breakdown:</div>
+        <div className="terminal-line text-green">  - Stanford University: 28% [AMBITIOUS]</div>
+        <div className="terminal-line text-green">  - Georgia Tech: 64% [TARGET]</div>
+        <div className="terminal-line text-green">  - ASU / UT Dallas: 88% [SAFE]</div>
+        <div className="terminal-line text-accent">■ EVALUATION COMPLETE: 12 MATCHES GENERATED</div>
       </div>
     )
   },

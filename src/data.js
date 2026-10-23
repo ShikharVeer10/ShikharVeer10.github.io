@@ -1,4 +1,4 @@
-export const personalInfo = {
+﻿export const personalInfo = {
   name: "Shikhar Veeramachineni",
   title: "AI/ML & Backend Engineer",
   location: "Hyderabad, India",
@@ -37,19 +37,18 @@ export const projects = [
     github: "https://github.com/ShikharVeer10/Emotio"
   },
   {
-    id: "intellipost",
-    title: "IntelliPost — AI Document Intelligence System",
-    tag: "Document Intelligence",
+    id: "unipath",
+    title: "UniPath — AI Graduate Admissions Intelligence Platform",
+    tag: "Admissions Intelligence & RAG",
     year: "2025",
-    desc: "Document intelligence platform utilizing strict schema-guided reasoning to extract structured policy data from PDFs.",
+    desc: "AI admissions intelligence platform orchestrating applicant evaluations, dynamic university matching, and mock interview simulations.",
     bullets: [
-      "Developed an AI-powered document intelligence platform allowing authenticated users to upload PDFs and extract structured policy data through automated processing.",
-      "Built schema-based reasoning flows using Pydantic and Pydantic-AI to guide LLM summarization, ensuring consistent outputs, validated inputs, and reliable content generation.",
-      "Integrated FastAPI endpoints with asynchronous database storage to manage document access while maintaining structured data persistence."
+      "Architected an end-to-end admissions intelligence system with Next.js 16 and FastAPI, serving domain-driven routers for profile scoring, university matching, and mock interviews.",
+      "Engineered structured RAG workflows and resume parsing pipelines using PydanticAI and pgvector embeddings to extract validated applicant profiles from multi-page PDFs.",
+      "Implemented dynamic heuristic scoring engines and mock interview simulators with async SQLAlchemy and PostgreSQL, generating tailored admission probabilities and feedback."
     ],
-    stack: ["FastAPI", "Pydantic-AI", "Pydantic", "SQLAlchemy", "Uvicorn", "PostgreSQL"],
-    github: "https://github.com/ShikharVeer10/IntelliPost",
-    achievements: "3rd Place — Post-a-thon Hackathon"
+    stack: ["FastAPI", "PydanticAI", "Next.js", "PostgreSQL", "SQLModel", "SQLAlchemy", "pgvector"],
+    github: "https://github.com/ShikharVeer10/UniPath"
   },
   {
     id: "traction",
