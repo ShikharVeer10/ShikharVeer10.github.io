@@ -78,7 +78,7 @@ export default function Intro({ theme, onToggleTheme }) {
           </div>
           <div className="status-widget-row">
             <span className="label">Availability</span>
-            <span className="value">Summer 2026</span>
+            <span className="value">Summer 2027</span>
           </div>
         </div>
 
