@@ -8,7 +8,7 @@ export default function Blogs({ onSelectBlog }) {
       {/* Left Column */}
       <div className="section-left">
         <h2>Blogs</h2>
-        <span className="section-meta">Technical Writing // 03</span>
+        <span className="section-meta">Writing // 03</span>
         <p className="blogs-lead-note">
           Deep-dives into systems engineering, document AI architectures, and lessons learnt from production failures.
         </p>
@@ -18,45 +18,38 @@ export default function Blogs({ onSelectBlog }) {
       <div className="section-right">
         <div className="blogs-list">
           {blogs.map((post) => (
-            <article 
-              key={post.slug} 
-              className="blog-row-item"
-              onClick={() => onSelectBlog(post)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
+            <div key={post.slug} className="blog-item-block">
+              <a 
+                href={`/blogs/${post.slug}`}
+                className="blog-it-row"
+                onClick={(e) => {
                   e.preventDefault();
-                  onSelectBlog(post);
-                }
-              }}
-            >
-              {/* Top line with Title, dotted leader, and Date */}
-              <div className="blog-row-header">
-                <span className="blog-row-title">
-                  {post.title}
+                  onSelectBlog(post.slug);
+                }}
+              >
+                <span className="blog-it-title wrap">
+                  {post.title.toLowerCase()}
                 </span>
                 <span className="blog-leader" aria-hidden="true" />
-                <span className="blog-row-date">{post.date}</span>
-                <ArrowUpRight size={16} className="blog-arrow-icon" />
-              </div>
+                <span className="blog-it-date">
+                  {post.date.toLowerCase()}
+                </span>
+              </a>
 
-              {/* Subtitle / summary paragraph */}
-              <p className="blog-row-desc">
-                {post.description}
+              <p className="blog-it-desc">
+                {post.description.toLowerCase()}
               </p>
 
-              {/* Meta pills */}
               <div className="blog-meta-tags">
                 <span className="blog-read-pill">
-                  <BookOpen size={12} />
-                  <span>{post.readingTime}</span>
+                  <BookOpen size={11} />
+                  <span>{post.readingTime.toLowerCase()}</span>
                 </span>
                 {post.tags.map((t) => (
                   <span key={t} className="blog-tag-pill">#{t}</span>
                 ))}
               </div>
-            </article>
+            </div>
           ))}
         </div>
       </div>
