@@ -10,7 +10,7 @@
   manifesto: [
     "I work at the intersection of backend systems, machine learning pipelines, and structured API design.",
     "My focus is on translating complex system requirements into scalable, validated codebases — putting data integrity and functional performance over marketing hype.",
-    "Open to Full Time Backend and AI/ML Engineering Roles from Summer 2027."
+    "Open to AI/ML Engineering Roles from Summer 2027."
   ],
   availability: "Available from Summer 2027 for Full Time Roles"
 };
