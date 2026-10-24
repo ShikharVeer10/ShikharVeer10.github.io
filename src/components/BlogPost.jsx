@@ -61,9 +61,9 @@ export default function BlogPost({ blog, onBack, theme, onToggleTheme }) {
 
           {/* Post Meta */}
           <p className="post-meta">
-            <span className="meta-date">{blog.date.toLowerCase()}</span>
+            <span className="meta-date">{blog.date}</span>
             <span className="meta-dot"> • </span>
-            <span className="meta-read">{blog.readingTime.toLowerCase()}</span>
+            <span className="meta-read">{blog.readingTime}</span>
           </p>
 
           {/* Prose Content */}

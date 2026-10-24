@@ -200,8 +200,8 @@ export const achievements = [
 export const blogs = [
   {
     "slug": "slideforge",
-    "title": "How I built SlideForge: Universal Multi-Agent PowerPoint Generation",
-    "date": "February 2026",
+    "title": "How I Built SlideForge: Universal Multi-Agent PowerPoint Generation",
+    "date": "June 2025",
     "readingTime": "6 min read",
     "description": "Generative AI presentation tools rewrite entire files and ruin handcrafted typography. Here is how I built a multi-agent engine that injects structured data while preserving every python-pptx run and master style.",
     "tags": [
@@ -297,8 +297,8 @@ export const blogs = [
   },
   {
     "slug": "aethermind",
-    "title": "How I built AetherMind: Layout-Aware Document Intelligence & Reconstruction",
-    "date": "March 2026",
+    "title": "How I Built AetherMind: Layout-Aware Document Intelligence & Reconstruction",
+    "date": "May 2025",
     "readingTime": "7 min read",
     "description": "Extracting raw text from complex PDFs and decks throws away 80% of human intent: bounding boxes, flowcharts, tables, and visual hierarchy. Here is how I engineered an agentic layout reconstruction engine with automated SSIM validation.",
     "tags": [

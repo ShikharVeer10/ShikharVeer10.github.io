@@ -28,22 +28,22 @@ export default function Blogs({ onSelectBlog }) {
                 }}
               >
                 <span className="blog-it-title wrap">
-                  {post.title.toLowerCase()}
+                  {post.title}
                 </span>
                 <span className="blog-leader" aria-hidden="true" />
                 <span className="blog-it-date">
-                  {post.date.toLowerCase()}
+                  {post.date}
                 </span>
               </a>
 
               <p className="blog-it-desc">
-                {post.description.toLowerCase()}
+                {post.description}
               </p>
 
               <div className="blog-meta-tags">
                 <span className="blog-read-pill">
                   <BookOpen size={11} />
-                  <span>{post.readingTime.toLowerCase()}</span>
+                  <span>{post.readingTime}</span>
                 </span>
                 {post.tags.map((t) => (
                   <span key={t} className="blog-tag-pill">#{t}</span>
