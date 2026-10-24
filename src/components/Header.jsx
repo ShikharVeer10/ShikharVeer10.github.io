@@ -4,7 +4,8 @@ import { personalInfo } from '../data';
 export default function Header({ theme, onToggleTheme }) {
   const navItems = [
     { label: "Work", target: "#work" },
-    { label: "Journey", target: "#experience" },
+    { label: "Journey", target: "#journey" },
+    { label: "Blogs", target: "#blogs" },
     { label: "Toolkit", target: "#toolkit" },
     { label: "CV", target: "#resume" }
   ];

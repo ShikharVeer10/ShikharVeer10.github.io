@@ -46,6 +46,7 @@ export default function Intro({ theme, onToggleTheme }) {
           <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="#blogs">Blogs</a>
         </div>
 
         {/* Resume Download Button */}

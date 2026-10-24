@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import SpotlightBg from './components/SpotlightBg';
 import ProjectPreview from './components/ProjectPreview';
 import ProjectDrawer from './components/ProjectDrawer';
+import BlogDrawer from './components/BlogDrawer';
 import Intro from './components/Intro';
 import Work from './components/Work';
 import Publications from './components/Publications';
 import Journey from './components/Journey';
+import Blogs from './components/Blogs';
 import GitHubActivity from './components/GitHubActivity';
 import Achievements from './components/Achievements';
 import Toolkit from './components/Toolkit';
@@ -14,6 +16,7 @@ import Footer from './components/Footer';
 export default function App() {
   const [theme, setTheme] = useState('light'); // default to cream paper theme
   const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedBlog, setSelectedBlog] = useState(null);
   
   // Interactive highlighting states
   const [hoveredSkill, setHoveredSkill] = useState(null);
@@ -79,27 +82,36 @@ export default function App() {
         {/* 4. Journey (Experience & Education) */}
         <Journey />
 
-        {/* 4. GitHub Contribution Activity */}
+        {/* 5. Technical Blogs (SlideForge & AetherMind) */}
+        <Blogs onSelectBlog={setSelectedBlog} />
+
+        {/* 6. GitHub Contribution Activity */}
         <GitHubActivity username="ShikharVeer10" />
 
-        {/* 5. Achievements */}
+        {/* 7. Achievements */}
         <Achievements />
 
-        {/* 5. Toolkit with connected highlighting */}
+        {/* 8. Toolkit with connected highlighting */}
         <Toolkit 
           activeProjectStack={activeProjectStack}
           onHoverSkill={setHoveredSkill}
         />
 
-        {/* 5. Clean footer availability info */}
+        {/* 9. Clean footer availability info */}
         <Footer />
 
       </div>
 
-      {/* Slide-out Specification Panel */}
+      {/* Slide-out Specification Panel for Projects */}
       <ProjectDrawer 
         project={selectedProject}
         onClose={() => setSelectedProject(null)}
+      />
+
+      {/* Slide-out Technical Reader Drawer for Blogs */}
+      <BlogDrawer 
+        blog={selectedBlog}
+        onClose={() => setSelectedBlog(null)}
       />
 
       {/* Floating Mouse Preview Box */}
