@@ -31,3 +31,6 @@ scratch_*
 !walkthrough.md
 !task.md
 !implementation_plan.md
+
+# Virtual environments
+.venv/
