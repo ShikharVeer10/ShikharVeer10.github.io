@@ -1,4 +1,4 @@
-﻿export const personalInfo = {
+export const personalInfo = {
   name: "Shikhar Veeramachineni",
   title: "AI/ML & Backend Engineer",
   location: "Hyderabad, India",
@@ -124,6 +124,8 @@ export const journey = {
     {
       company: "Vellore Institute of Technology",
       role: "B.Tech, Computer Science (AI & ML)",
+      logo: "/logos/vit.jpg",
+      linkedin: "https://www.linkedin.com/school/vellore-institute-of-technology/",
       date: "Sept 2023 – Aug 2027",
       bullets: [
         "Specialization in Artificial Intelligence and Machine Learning.",
@@ -134,6 +136,8 @@ export const journey = {
     {
       company: "Oakridge International School",
       role: "Secondary & Senior Secondary Education",
+      logo: "/logos/oakridge.png",
+      linkedin: "https://www.linkedin.com/school/oakridge-international-school/",
       date: "2011 – 2023",
       bullets: [
         "Built an early foundation in Python and MySQL — writing scripts before understanding why they worked, and breaking things to figure that out.",
