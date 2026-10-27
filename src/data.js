@@ -85,6 +85,8 @@ export const journey = {
     {
       company: "Deloitte",
       role: "AI Intern",
+      logo: "/logos/deloitte.png",
+      linkedin: "https://www.linkedin.com/company/deloitte/",
       date: "May 2026 – July 2026",
       bullets: [
         "Built an AI-powered document intelligence pipeline for extracting complex engineering documents and presentation slides into structured JSON while preserving layout, typography, styling, and semantic structure.",
@@ -96,6 +98,8 @@ export const journey = {
     {
       company: "Grant Thornton Bharat LLP",
       role: "Summer Trainee",
+      logo: "/logos/grant-thornton.jpeg",
+      linkedin: "https://www.linkedin.com/company/grant-thornton-bharat-llp/",
       date: "June 2025 – July 2025",
       bullets: [
         "Analyzed large-scale PMAY beneficiary and housing allocation datasets, supporting recurring reviews and stakeholder reporting.",
@@ -104,8 +108,10 @@ export const journey = {
       ]
     },
     {
-      company: "Coschool",
+      company: "CoSchoolAI",
       role: "AI Intern",
+      logo: "/logos/coschoolai.jpeg",
+      linkedin: "https://www.linkedin.com/company/coschoolai/",
       date: "April 2023 – June 2023",
       bullets: [
         "Designed structured prompt sets to evaluate generative AI robustness and benchmarked model phrasing sensitivities.",

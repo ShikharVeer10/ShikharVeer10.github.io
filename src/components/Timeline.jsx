@@ -18,7 +18,25 @@ export default function Timeline() {
               {item.date}
             </div>
             <div className="timeline-details-col">
-              <div className="timeline-org">{item.company}</div>
+              <div className="jg-org-row">
+                <div className="timeline-org">{item.company}</div>
+                {item.logo && (
+                  <a
+                    href={item.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="jg-company-logo-link"
+                    title={`${item.company} on LinkedIn`}
+                    aria-label={`${item.company} on LinkedIn`}
+                  >
+                    <img
+                      src={item.logo}
+                      alt={`${item.company} logo`}
+                      className="jg-company-logo"
+                    />
+                  </a>
+                )}
+              </div>
               <div className="timeline-role">{item.role}</div>
               <ul className="timeline-bullets">
                 {item.bullets.map((bullet, i) => (
@@ -41,7 +59,25 @@ export default function Timeline() {
               {item.date}
             </div>
             <div className="timeline-details-col">
-              <div className="timeline-org">{item.company}</div>
+              <div className="jg-org-row">
+                <div className="timeline-org">{item.company}</div>
+                {item.logo && (
+                  <a
+                    href={item.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="jg-company-logo-link"
+                    title={`${item.company} on LinkedIn`}
+                    aria-label={`${item.company} on LinkedIn`}
+                  >
+                    <img
+                      src={item.logo}
+                      alt={`${item.company} logo`}
+                      className="jg-company-logo"
+                    />
+                  </a>
+                )}
+              </div>
               <div className="timeline-role">{item.role}</div>
               <ul className="timeline-bullets">
                 {item.bullets.map((bullet, i) => (

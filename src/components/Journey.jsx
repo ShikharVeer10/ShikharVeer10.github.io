@@ -37,7 +37,25 @@ function JourneyGroup({ label, meta, items }) {
             {/* Entry body */}
             <div className="jg-body">
               <div className="jg-top">
-                <h3 className="jg-org">{item.company}</h3>
+                <div className="jg-org-row">
+                  <h3 className="jg-org">{item.company}</h3>
+                  {item.logo && (
+                    <a
+                      href={item.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="jg-company-logo-link"
+                      title={`${item.company} on LinkedIn`}
+                      aria-label={`${item.company} on LinkedIn`}
+                    >
+                      <img
+                        src={item.logo}
+                        alt={`${item.company} logo`}
+                        className="jg-company-logo"
+                      />
+                    </a>
+                  )}
+                </div>
                 <span className="jg-role">{item.role}</span>
               </div>
               <ul className="jg-bullets">

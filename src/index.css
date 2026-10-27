@@ -785,6 +785,58 @@ body.dark-mode .tech-badge {
   gap: 0.2rem;
 }
 
+.jg-org-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.jg-company-logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.jg-company-logo-link:hover {
+  transform: translateY(-1px) scale(1.08);
+}
+
+.jg-company-logo-link:active {
+  transform: scale(0.96);
+}
+
+.jg-company-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: block;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jg-company-logo-link:hover .jg-company-logo {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(var(--accent-rgb), 0.25);
+}
+
+body.dark-mode .jg-company-logo {
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .jg-company-logo-link:hover .jg-company-logo {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(var(--accent-rgb), 0.35);
+}
+
 .jg-org {
   font-family: var(--serif);
   font-size: 1.2rem;
