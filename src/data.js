@@ -152,25 +152,25 @@ export const journey = {
 export const bentoToolkit = [
   {
     title: "AI & Machine Learning",
-    techs: ["PyTorch", "TensorFlow", "HuggingFace", "Scikit-Learn", "YOLO", "OpenCV", "FAISS", "KeyBERT"]
+    techs: ["PyTorch", "TensorFlow", "HuggingFace", "Scikit-Learn", "KeyBERT"]
   },
   {
     title: "Backend Engineering",
-    techs: ["FastAPI", "Pydantic", "Pydantic-AI", "LangGraph", "Uvicorn", "Async APIs", "SQLModel", "SQLAlchemy"]
+    techs: ["FastAPI", "Pydantic", "Pydantic-AI", "LangGraph", "SQLModel", "SQLAlchemy"]
   },
   {
     title: "Languages & Runtimes",
-    techs: ["Python", "SQL", "JavaScript", "C++", "Java", "Node.js"]
+    techs: ["Python", "SQL", "Java"]
   },
   {
     title: "Developer Workflows",
-    techs: ["Git / GitHub", "Docker", "VS Code", "Vercel", "Groq API", "REST APIs", "PostgreSQL", "SQLite"]
+    techs: ["Git / GitHub", "Docker", "Groq API", "REST APIs", "PostgreSQL", "SQLite"]
   }
 ];
 export const technologies = {
-  aiml: ["PyTorch", "TensorFlow", "HuggingFace", "Scikit-Learn", "YOLO", "OpenCV", "FAISS"],
-  backend: ["FastAPI", "Pydantic", "Pydantic-AI", "LangGraph", "Uvicorn", "Groq API", "Async APIs"],
-  languages: ["Python", "SQL", "JavaScript", "C++", "Java"],
+  aiml: ["PyTorch", "TensorFlow", "HuggingFace", "Scikit-Learn"],
+  backend: ["FastAPI", "Pydantic", "Pydantic-AI", "LangGraph", "Groq API"],
+  languages: ["Python", "SQL", "Java"],
   domains: ["NLP", "Computer Vision", "AI Agents", "RAG Systems", "Model Deployment"]
 };
 export const competencies = [
