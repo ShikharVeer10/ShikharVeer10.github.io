@@ -152,7 +152,7 @@ export const journey = {
 export const bentoToolkit = [
   {
     title: "AI & Machine Learning",
-    techs: ["PyTorch", "TensorFlow", "HuggingFace", "Scikit-Learn", "KeyBERT"]
+    techs: ["PyTorch", "TensorFlow", "HuggingFace", "Scikit-Learn", "LangGraph", "LangChain", "Pydantic-AI", "KeyBERT"]
   },
   {
     title: "Backend Engineering",
@@ -168,7 +168,7 @@ export const bentoToolkit = [
   }
 ];
 export const technologies = {
-  aiml: ["PyTorch", "TensorFlow", "HuggingFace", "Scikit-Learn"],
+  aiml: ["PyTorch", "TensorFlow", "HuggingFace", "Scikit-Learn", "LangGraph", "LangChain", "Pydantic-AI"],
   backend: ["FastAPI", "Pydantic", "Pydantic-AI", "LangGraph", "Groq API"],
   languages: ["Python", "SQL", "Java"],
   domains: ["NLP", "Computer Vision", "AI Agents", "RAG Systems", "Model Deployment"]
