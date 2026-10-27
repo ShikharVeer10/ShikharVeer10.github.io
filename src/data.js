@@ -156,7 +156,7 @@ export const bentoToolkit = [
   },
   {
     title: "Backend Engineering",
-    techs: ["FastAPI", "Pydantic", "Pydantic-AI", "LangGraph", "SQLModel", "SQLAlchemy"]
+    techs: ["FastAPI", "Pydantic", "LangGraph", "SQLModel", "SQLAlchemy"]
   },
   {
     title: "Languages & Runtimes",
@@ -169,7 +169,7 @@ export const bentoToolkit = [
 ];
 export const technologies = {
   aiml: ["PyTorch", "TensorFlow", "HuggingFace", "Scikit-Learn", "LangGraph", "LangChain", "Pydantic-AI"],
-  backend: ["FastAPI", "Pydantic", "Pydantic-AI", "LangGraph", "Groq API"],
+  backend: ["FastAPI", "Pydantic", "LangGraph", "Groq API"],
   languages: ["Python", "SQL", "Java"],
   domains: ["NLP", "Computer Vision", "AI Agents", "RAG Systems", "Model Deployment"]
 };
