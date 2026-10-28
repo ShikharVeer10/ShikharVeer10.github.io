@@ -81,7 +81,7 @@ export default function Journey() {
       {/* Left Column: Section heading */}
       <div className="section-left">
         <h2>Journey</h2>
-        <span className="section-meta">Timeline // 02</span>
+        <span className="section-meta">Timeline // 03</span>
       </div>
 
       {/* Right Column: Stacked groups */}

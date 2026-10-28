@@ -21,7 +21,7 @@ export default function Achievements() {
       {/* Left Column: Heading */}
       <div className="section-left">
         <h2>Achievements</h2>
-        <span className="section-meta">Awards // 05</span>
+        <span className="section-meta">Awards // 06</span>
       </div>
 
       {/* Right Column: Achievements list */}

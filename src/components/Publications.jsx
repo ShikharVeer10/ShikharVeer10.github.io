@@ -96,7 +96,7 @@ export default function Publications() {
       {/* Left label */}
       <div className="section-left">
         <h2>Research</h2>
-        <span className="section-meta">Publications // 04</span>
+        <span className="section-meta">Publications // 02</span>
       </div>
 
       {/* Right panel */}

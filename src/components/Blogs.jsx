@@ -8,7 +8,7 @@ export default function Blogs({ onSelectBlog }) {
       {/* Left Column */}
       <div className="section-left">
         <h2>Blogs</h2>
-        <span className="section-meta">Writing // 03</span>
+        <span className="section-meta">Writing // 04</span>
         <p className="blogs-lead-note">
           Deep-dives into systems engineering, document AI architectures, and lessons learnt from production failures.
         </p>

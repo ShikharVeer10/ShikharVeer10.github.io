@@ -95,7 +95,7 @@ export default function GitHubActivity({ username = 'ShikharVeer10' }) {
   if (error) {
     return (
       <section className="editorial-section" id="activity">
-        <div className="section-left"><h2>Activity</h2><span className="section-meta">Code // 03</span></div>
+        <div className="section-left"><h2>Activity</h2><span className="section-meta">Code // 05</span></div>
         <div className="section-right gh-loading"><span>Could not load contributions.</span></div>
       </section>
     );
@@ -104,7 +104,7 @@ export default function GitHubActivity({ username = 'ShikharVeer10' }) {
   if (!contributions.length) {
     return (
       <section className="editorial-section" id="activity">
-        <div className="section-left"><h2>Activity</h2><span className="section-meta">Code // 03</span></div>
+        <div className="section-left"><h2>Activity</h2><span className="section-meta">Code // 05</span></div>
         <div className="section-right gh-loading"><span>Loading contributions…</span></div>
       </section>
     );
@@ -136,7 +136,7 @@ export default function GitHubActivity({ username = 'ShikharVeer10' }) {
       {/* Left label */}
       <div className="section-left">
         <h2>Activity</h2>
-        <span className="section-meta">Code // 03</span>
+        <span className="section-meta">Code // 05</span>
       </div>
 
       {/* Right panel */}

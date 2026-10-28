@@ -8,7 +8,7 @@ export default function Toolkit({ activeProjectStack, onHoverSkill }) {
       {/* Left Column: Heading */}
       <div className="section-left">
         <h2>Toolkit</h2>
-        <span className="section-meta">Skills // 03</span>
+        <span className="section-meta">Skills // 07</span>
       </div>
 
       {/* Right Column: Grouped Tag lists */}
