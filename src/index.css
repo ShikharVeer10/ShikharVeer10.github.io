@@ -892,63 +892,6 @@ body.dark-mode .jg-company-logo-link:hover .jg-company-logo {
   opacity: 0.85;
 }
 
-
-/* ── Experience Side Metric Box (Design reference) ── */
-.jg-details-row {
-  display: flex;
-  gap: 2.2rem;
-  align-items: flex-start;
-  margin-top: 0.35rem;
-}
-
-.jg-stat-box {
-  flex-shrink: 0;
-  width: 140px;
-  display: flex;
-  flex-direction: column;
-  padding-right: 0.5rem;
-}
-
-.jg-stat-val {
-  font-family: var(--sans);
-  font-size: 2.2rem;
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  color: #f59e0b; /* Amber warm accent like reference */
-}
-
-body.dark-mode .jg-stat-val {
-  color: #fbbf24;
-  text-shadow: 0 0 24px rgba(245, 158, 11, 0.25);
-}
-
-.jg-stat-label {
-  font-size: 0.72rem;
-  line-height: 1.35;
-  color: var(--muted);
-  font-weight: 500;
-  margin-top: 0.35rem;
-  text-transform: lowercase;
-  letter-spacing: 0.01em;
-}
-
-.jg-details-row .jg-bullets {
-  flex: 1;
-}
-
-@media (max-width: 768px) {
-  .jg-details-row {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  .jg-stat-box {
-    width: 100%;
-    border-left: 2px solid var(--accent);
-    padding-left: 0.75rem;
-  }
-}
-
 /* ── GitHub Activity Heatmap ── */
 .gh-loading {
   display: flex;
