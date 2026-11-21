@@ -88,11 +88,17 @@ export const journey = {
       logo: "/logos/deloitte.png",
       linkedin: "https://www.linkedin.com/company/deloitte/",
       date: "May 2026 – July 2026",
+      stat: {
+        value: 35,
+        prefix: "-",
+        suffix: "%",
+        label: "summarization latency"
+      },
       bullets: [
-        "Built an AI-powered document intelligence pipeline for extracting complex engineering documents and presentation slides into structured JSON while preserving layout, typography, styling, and semantic structure.",
-        "Developed reconstruction and validation frameworks to regenerate documents from structured representations, analyze extraction fidelity, identify reconstruction failures, and improve end-to-end document understanding using OCR post-processing, layout reasoning, and multi-agent AI workflows.",
-        "Designed a template-aware PowerPoint generation system using a multi-agent workflow to map unstructured text and JSON into native presentation layouts without compromising visual formatting.",
-        "Implemented custom rendering and text-run manipulation modules to dynamically generate presentations from multimodal inputs while preserving fonts, margins, shape constraints, and slide aesthetics."
+        "Engineered a multi-agent document intelligence platform using Python, Pydantic-AI, and Vision LLMs to extract visual layouts and semantic flows, ensuring 90% semantic context retention.",
+        "Built an orchestration pipeline with specialized AI agents to map spatial coordinates, complex table structures, and diagram topologies, enabling high-fidelity AI document recreation with over 85% structural accuracy.",
+        "Implemented visual analysis techniques to extract style attributes including font properties, RGB colors, backgrounds, and table structures.",
+        "Integrated asynchronous LLM workflows using Pydantic-AI and Gemini 1.5 Pro, achieving 88% schema compliance and cutting summarization latency by 35%."
       ]
     },
     {
@@ -101,10 +107,16 @@ export const journey = {
       logo: "/logos/grant-thornton.jpeg",
       linkedin: "https://www.linkedin.com/company/grant-thornton-bharat-llp/",
       date: "June 2025 – July 2025",
+      stat: {
+        value: 47,
+        prefix: "+",
+        suffix: "%",
+        label: "query performance gain"
+      },
       bullets: [
-        "Analyzed large-scale PMAY beneficiary and housing allocation datasets, supporting recurring reviews and stakeholder reporting.",
-        "Developed Python-based visualizations and analytics components to translate business requirements into insights.",
-        "Designed and implemented structured SQL schemas for reliable data storage, aggregation, and standardized reporting."
+        "Analyzed 500,000+ beneficiary records and milestone trajectories for the PMAY housing program, powering executive analytics dashboards.",
+        "Designed normalized Postgres DB schemas and optimized multi-table query structures, improving query performance by 47%.",
+        "Collaborated with consulting teams to build automated data validation and KPI reporting pipelines, eliminating 80% of manual discrepancies."
       ]
     },
     {
@@ -113,10 +125,16 @@ export const journey = {
       logo: "/logos/coschoolai.jpeg",
       linkedin: "https://www.linkedin.com/company/coschoolai/",
       date: "April 2023 – June 2023",
+      stat: {
+        value: 36,
+        prefix: "-",
+        suffix: "%",
+        label: "hallucination rate"
+      },
       bullets: [
-        "Designed structured prompt sets to evaluate generative AI robustness and benchmarked model phrasing sensitivities.",
-        "Conducted systematic evaluation of model robustness by testing edge cases and instruction phrasing.",
-        "Documented prompt engineering workflows and standardized best practices for ChatGPT and Copilot adoption."
+        "Designed structured prompt engineering pipelines and few-shot reasoning workflows for generative LLMs to create curriculum-aligned educational content.",
+        "Developed automated evaluation frameworks and schema guardrails, reducing hallucination rates by 36% and improving instructional quality by 28%.",
+        "Collaborated with content teams to benchmark model outputs, improving generation coherence and syllabus consistency."
       ]
     }
   ],
