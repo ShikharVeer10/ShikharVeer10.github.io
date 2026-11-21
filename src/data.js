@@ -88,6 +88,12 @@ export const journey = {
       logo: "/logos/deloitte.png",
       linkedin: "https://www.linkedin.com/company/deloitte/",
       date: "May 2026 – July 2026",
+      stat: {
+        value: 35,
+        prefix: "-",
+        suffix: "%",
+        label: "summarization latency"
+      },
       bullets: [
         "Built an AI-powered document intelligence pipeline for extracting complex engineering documents and presentation slides into structured JSON while preserving layout, typography, styling, and semantic structure.",
         "Developed reconstruction and validation frameworks to regenerate documents from structured representations, analyze extraction fidelity, identify reconstruction failures, and improve end-to-end document understanding using OCR post-processing, layout reasoning, and multi-agent AI workflows.",
@@ -101,6 +107,12 @@ export const journey = {
       logo: "/logos/grant-thornton.jpeg",
       linkedin: "https://www.linkedin.com/company/grant-thornton-bharat-llp/",
       date: "June 2025 – July 2025",
+      stat: {
+        value: 47,
+        prefix: "+",
+        suffix: "%",
+        label: "query performance gain"
+      },
       bullets: [
         "Analyzed large-scale PMAY beneficiary and housing allocation datasets, supporting recurring reviews and stakeholder reporting.",
         "Developed Python-based visualizations and analytics components to translate business requirements into insights.",
@@ -113,6 +125,12 @@ export const journey = {
       logo: "/logos/coschoolai.jpeg",
       linkedin: "https://www.linkedin.com/company/coschoolai/",
       date: "April 2023 – June 2023",
+      stat: {
+        value: 36,
+        prefix: "-",
+        suffix: "%",
+        label: "hallucination rate"
+      },
       bullets: [
         "Designed structured prompt sets to evaluate generative AI robustness and benchmarked model phrasing sensitivities.",
         "Conducted systematic evaluation of model robustness by testing edge cases and instruction phrasing.",

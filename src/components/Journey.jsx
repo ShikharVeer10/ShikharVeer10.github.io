@@ -1,6 +1,42 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { journey } from '../data';
 
+function AnimatedNumber({ value, prefix = '', suffix = '', trigger }) {
+  const [displayValue, setDisplayValue] = useState(0);
+
+  useEffect(() => {
+    if (!trigger) {
+      setDisplayValue(0);
+      return;
+    }
+
+    const duration = 1200; // ms
+    const startTime = performance.now();
+
+    const animate = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // Ease out cubic: 1 - pow(1 - progress, 3)
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(easeOut * value);
+
+      setDisplayValue(current);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [trigger, value]);
+
+  return (
+    <span className="jg-stat-numeric">
+      {prefix}{displayValue}{suffix}
+    </span>
+  );
+}
+
 function JourneyGroup({ label, meta, items }) {
   const groupRef = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -31,10 +67,26 @@ function JourneyGroup({ label, meta, items }) {
             key={idx}
             style={{ transitionDelay: `${idx * 80}ms` }}
           >
-            {/* Date pill — left aligned */}
-            <div className="jg-date">{item.date}</div>
+            {/* Left Column: Date & Animated Metric Badge */}
+            <div className="jg-left-col">
+              <div className="jg-date">{item.date}</div>
 
-            {/* Entry body */}
+              {item.stat && (
+                <div className="jg-stat-badge">
+                  <div className="jg-stat-val">
+                    <AnimatedNumber
+                      value={item.stat.value}
+                      prefix={item.stat.prefix}
+                      suffix={item.stat.suffix}
+                      trigger={visible}
+                    />
+                  </div>
+                  <div className="jg-stat-label">{item.stat.label}</div>
+                </div>
+              )}
+            </div>
+
+            {/* Entry body: Unchanged width & full breathing room for bullets */}
             <div className="jg-body">
               <div className="jg-top">
                 <div className="jg-org-row">

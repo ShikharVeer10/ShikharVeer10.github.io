@@ -737,8 +737,8 @@ body.dark-mode .tech-badge {
 /* Single entry row */
 .jg-entry {
   display: grid;
-  grid-template-columns: 9rem 1fr;
-  gap: 0 2rem;
+  grid-template-columns: 11.5rem 1fr;
+  gap: 0 2.5rem;
   padding: 1.8rem 0;
   border-bottom: 1px solid var(--line-soft);
   opacity: 0;
@@ -770,6 +770,44 @@ body.dark-mode .tech-badge {
   color: var(--muted);
   padding-top: 0.3rem;
   line-height: 1.5;
+}
+
+
+/* Left Column in Journey Entry */
+.jg-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.jg-stat-badge {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.jg-stat-val {
+  font-family: var(--sans);
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #f59e0b; /* Amber warm accent like reference */
+}
+
+body.dark-mode .jg-stat-val {
+  color: #fbbf24;
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+}
+
+.jg-stat-label {
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: var(--muted);
+  font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: 0.01em;
+  max-width: 9rem;
 }
 
 /* Body column */
