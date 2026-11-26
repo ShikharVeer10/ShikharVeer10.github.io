@@ -33,7 +33,7 @@ export const projects = [
       "Designed modular NLP pipelines including preprocessing, keyword extraction (KeyBERT), and structured sentiment scoring to improve interpretability and relevance.",
       "Implemented optimized inference workflows using PyTorch and HuggingFace for scalable, low-latency deployment in lightweight environments."
     ],
-    stack: ["PyTorch", "TensorFlow", "HuggingFace", "OpenCV", "KeyBERT", "FAISS"],
+    stack: ["PyTorch", "TensorFlow", "HuggingFace", "KeyBERT", "FAISS"],
     github: "https://github.com/ShikharVeer10/Emotio"
   },
   {
