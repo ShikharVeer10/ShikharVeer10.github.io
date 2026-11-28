@@ -22,7 +22,7 @@ export default function Footer() {
 
         <div className="contact-cta-right">
           <p className="contact-pitch">
-            {personalInfo.availability} Reach out if you&apos;re shipping something ambitious or looking for an engineer who owns the stack.
+            {personalInfo.availability}. Always down to chat about interesting engineering problems or new opportunities.
           </p>
 
           <div className="contact-actions">
