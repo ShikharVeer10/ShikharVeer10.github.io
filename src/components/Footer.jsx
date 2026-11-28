@@ -1,27 +1,71 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { personalInfo } from '../data';
 
 export default function Footer() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(personalInfo.email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
-    <footer className="footer-wrapper" id="contact">
-      
-      {/* Left Column: Availability */}
-      <div className="footer-left">
-        <p className="availability">{personalInfo.availability}</p>
-        <p>© {new Date().getFullYear()} // {personalInfo.name}</p>
-      </div>
-      
-      {/* Right Column: Contact Links */}
-      <div className="footer-right">
-        <div className="footer-nav">
-          <a href={`mailto:${personalInfo.email}`}>Email</a>
-          <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="/resume.pdf" download="Shikhar_Veeramachineni_Resume.pdf">Resume ↓</a>
+    <footer className="contact-footer" id="contact">
+      <div className="contact-cta-grid">
+        <div className="contact-cta-left">
+          <span className="contact-eyebrow">LET&apos;S TALK</span>
+          <h2 className="contact-heading">
+            What are you<br />working on?
+          </h2>
         </div>
-        <a href="#intro" style={{ color: 'var(--accent)', fontWeight: '600' }}>Back to top ↑</a>
+
+        <div className="contact-cta-right">
+          <p className="contact-pitch">
+            {personalInfo.availability} Tell me what you&apos;re building and where you need help.
+          </p>
+
+          <div className="contact-actions">
+            <a
+              href={`mailto:${personalInfo.email}?subject=Role%20Opportunity`}
+              className="contact-btn contact-btn-primary"
+            >
+              Discuss a role ↗
+            </a>
+            <a
+              href={`mailto:${personalInfo.email}?subject=Project%20Collaboration`}
+              className="contact-btn contact-btn-secondary"
+            >
+              Discuss a project ↗
+            </a>
+          </div>
+
+          <div className="contact-copy-wrap">
+            <button
+              type="button"
+              onClick={handleCopyEmail}
+              className="contact-email-btn"
+              title="Copy email address"
+            >
+              {personalInfo.email}
+            </button>
+            <span className="contact-copy-hint">
+              {copied ? '✓ copied to clipboard' : 'click to copy'}
+            </span>
+          </div>
+        </div>
       </div>
 
+      <div className="footer-bottom-bar">
+        <span className="footer-copy">© {new Date().getFullYear()} // {personalInfo.name}</span>
+
+        <div className="footer-nav">
+          <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="/resume.pdf" download="Shikhar_Veeramachineni_Resume.pdf">Resume ↓</a>
+          <a href="#intro" className="footer-top-link">Back to top ↑</a>
+        </div>
+      </div>
     </footer>
   );
 }
