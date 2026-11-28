@@ -4,7 +4,6 @@ import ProjectPreview from './components/ProjectPreview';
 import ProjectDrawer from './components/ProjectDrawer';
 import BlogPost from './components/BlogPost';
 import Intro from './components/Intro';
-import Highlights from './components/Highlights';
 import DeskCompanion from './components/DeskCompanion';
 import Work from './components/Work';
 import Publications from './components/Publications';
@@ -158,9 +157,6 @@ export default function App() {
           
           {/* 1. Intro Identity Block & Manifesto */}
           <Intro theme={theme} onToggleTheme={toggleTheme} />
-
-          {/* Highlights Strip */}
-          <Highlights />
 
           {/* 2. Selected Work List */}
           <Work 

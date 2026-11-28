@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { personalInfo } from '../data';
 import DecryptText from './DecryptText';
+import Highlights from './Highlights';
 import { FileDown } from 'lucide-react';
 
 export default function Intro({ theme, onToggleTheme }) {
@@ -102,6 +103,8 @@ export default function Intro({ theme, onToggleTheme }) {
             <p key={idx}>{para}</p>
           ))}
         </div>
+
+        <Highlights />
       </div>
 
     </header>
