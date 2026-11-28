@@ -57,7 +57,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom-bar">
-        <span className="footer-copy">© {new Date().getFullYear()} // {personalInfo.name}</span>
+        <span className="footer-copy">
+          © {new Date().getFullYear()} // {personalInfo.name} · build 2026.11
+        </span>
 
         <div className="footer-nav">
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>

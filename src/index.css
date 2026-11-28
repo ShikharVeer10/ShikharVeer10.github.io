@@ -2137,3 +2137,125 @@ body.dark-mode .prose-bullets li {
   }
 }
 
+
+/* Highlights Strip */
+.highlights-strip {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 5.5rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border, rgba(128, 128, 128, 0.16));
+  border-bottom: 1px solid var(--border, rgba(128, 128, 128, 0.16));
+  margin-bottom: 1.5rem;
+}
+
+.highlights-label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.highlights-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.highlight-val {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.highlight-key {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+/* Desk Companion Widget */
+.desk-companion {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0.8rem;
+  border-radius: 10px;
+  background: var(--paper, #f6f2eb);
+  border: 1px solid var(--border, rgba(128, 128, 128, 0.25));
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.companion-face {
+  width: 34px;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.companion-eye {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--paper, #f6f2eb);
+  transition: transform 0.08s linear;
+}
+
+.companion-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.companion-name {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.companion-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.companion-controls button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.companion-controls button:hover {
+  text-decoration: underline;
+}
+
+@media (width <= 900px) {
+  .highlights-strip {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .desk-companion {
+    display: none;
+  }
+}

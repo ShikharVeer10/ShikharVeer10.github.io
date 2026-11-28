@@ -35,6 +35,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
+    <!-- JSON-LD Structured Data for SEO & AI Discoverability -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shikhar Veeramachineni",
+        "url": "https://shikharveer10.github.io/",
+        "email": "shikharveer01@gmail.com",
+        "jobTitle": "AI/ML & Backend Engineer",
+        "description": "AI & Software Engineer building multimodal emotion AI systems, document intelligence platforms, and high-performance backend workflows.",
+        "sameAs": [
+          "https://github.com/ShikharVeer10",
+          "https://www.linkedin.com/in/shikhar-veeramachineni"
+        ],
+        "knowsAbout": [
+          "AI/ML Engineering",
+          "Backend Systems",
+          "FastAPI",
+          "PydanticAI",
+          "RAG",
+          "PyTorch",
+          "PostgreSQL"
+        ]
+      }
+    </script>
+
+    <!-- Prevent Theme Flash -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = saved || (prefersDark ? 'dark' : 'light');
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
     <style>
       * {
         margin: 0;

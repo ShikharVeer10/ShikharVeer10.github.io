@@ -4,6 +4,8 @@ import ProjectPreview from './components/ProjectPreview';
 import ProjectDrawer from './components/ProjectDrawer';
 import BlogPost from './components/BlogPost';
 import Intro from './components/Intro';
+import Highlights from './components/Highlights';
+import DeskCompanion from './components/DeskCompanion';
 import Work from './components/Work';
 import Publications from './components/Publications';
 import Journey from './components/Journey';
@@ -29,7 +31,15 @@ function getSlugFromPath() {
 }
 
 export default function App() {
-  const [theme, setTheme] = useState('light'); // default to cream paper theme
+  const [theme, setTheme] = useState(() => {
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') return saved;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    } catch {
+      return 'light';
+    }
+  });
   const [selectedProject, setSelectedProject] = useState(null);
   
   // Active blog slug for dedicated page view (/blogs/:slug)
@@ -68,14 +78,21 @@ export default function App() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const toggleTheme = () => {
-    const nextTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(nextTheme);
-    if (nextTheme === 'dark') {
+  useEffect(() => {
+    if (theme === 'dark') {
       document.body.classList.add('dark-mode');
+      document.documentElement.classList.add('dark-mode');
     } else {
       document.body.classList.remove('dark-mode');
+      document.documentElement.classList.remove('dark-mode');
     }
+    try {
+      localStorage.setItem('theme', theme);
+    } catch {}
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
   const handleHoverProject = (project) => {
@@ -142,6 +159,9 @@ export default function App() {
           {/* 1. Intro Identity Block & Manifesto */}
           <Intro theme={theme} onToggleTheme={toggleTheme} />
 
+          {/* Highlights Strip */}
+          <Highlights />
+
           {/* 2. Selected Work List */}
           <Work 
             onSelectProject={setSelectedProject}
@@ -172,6 +192,9 @@ export default function App() {
 
           {/* 9. Clean footer availability info */}
           <Footer />
+
+          {/* Interactive Desk Companion */}
+          <DeskCompanion mousePos={mousePos} />
 
         </div>
       )}
