@@ -14,15 +14,15 @@ export default function Footer() {
     <footer className="contact-footer" id="contact">
       <div className="contact-cta-grid">
         <div className="contact-cta-left">
-          <span className="contact-eyebrow">LET&apos;S TALK</span>
+          <span className="contact-eyebrow">START A CONVERSATION</span>
           <h2 className="contact-heading">
-            What are you<br />working on?
+            Got a hard problem<br />worth solving?
           </h2>
         </div>
 
         <div className="contact-cta-right">
           <p className="contact-pitch">
-            {personalInfo.availability} Tell me what you&apos;re building and where you need help.
+            {personalInfo.availability} Reach out if you&apos;re shipping something ambitious or looking for an engineer who owns the stack.
           </p>
 
           <div className="contact-actions">
